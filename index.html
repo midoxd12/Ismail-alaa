@@ -50,11 +50,14 @@
     </script>
 
     <style>
-        body {
+       html, body {
             background-color: #FAF9F6;
             color: #3E3B38;
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
         }
+        
 
         /* Hero Image Overlay for readability */
         .hero-overlay {
@@ -124,7 +127,7 @@
     </style>
 </head>
 <body class="antialiased font-sans">
-
+<body class="antialiased font-sans overflow-x-hidden w-full"></body>
     <!-- Audio Control -->
     <div id="audio-control" onclick="toggleAudio()" class="animate-fade-in text-primary">
         <i id="audio-icon" class="fas fa-volume-mute text-xl"></i>
